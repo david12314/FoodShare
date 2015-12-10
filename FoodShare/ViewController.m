@@ -10,6 +10,7 @@
 #import "DefaultView.h"
 #import "EventTableViewController.h"
 #import "EventView.h"
+#import "AddFoodViewController.h"
 
 @interface ViewController ()
 
@@ -30,7 +31,10 @@
 }
 
 - (void)foodPressed{
-    
+    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    AddFoodViewController *_addFoodViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"addFoodViewController"];
+    self.navigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self.navigationController pushViewController:_addFoodViewController animated:YES];
 }
 
 - (void)friendsPressed{
@@ -60,8 +64,8 @@
     
     UIBarButtonItem *home = [[UIBarButtonItem alloc] initWithCustomView:homeButton];
     UIBarButtonItem *settings = [[UIBarButtonItem alloc] initWithCustomView:settingsButton];
-    self.navigationItem.leftBarButtonItem = home;
-    self.navigationItem.rightBarButtonItem = settings;
+    //self.navigationItem.leftBarButtonItem = home;
+    self.navigationItem.rightBarButtonItems = @[settings, home];
     self.navigationItem.titleView = notificationsContainer;
     
     NSMutableArray *tableData = [[NSMutableArray alloc] initWithArray:@[@"Pizza",@"Rice"]];

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1A27061C19E83C0067EAA0 /* AddFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A26F61C19E83C0067EAA0 /* AddFoodViewController.m */; };
+		2B1A27071C19E83C0067EAA0 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A26F71C19E83C0067EAA0 /* camera.png */; };
+		2B1A27081C19E83C0067EAA0 /* FirstEventPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A26F91C19E83C0067EAA0 /* FirstEventPopupViewController.m */; };
+		2B1A27091C19E83C0067EAA0 /* greenpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A26FA1C19E83C0067EAA0 /* greenpin.png */; };
+		2B1A270A1C19E83C0067EAA0 /* GuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A26FC1C19E83C0067EAA0 /* GuestViewController.m */; };
+		2B1A270B1C19E83C0067EAA0 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A26FE1C19E83C0067EAA0 /* ListViewController.m */; };
+		2B1A270C1C19E83C0067EAA0 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A26FF1C19E83C0067EAA0 /* map.png */; };
+		2B1A270D1C19E83C0067EAA0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A27011C19E83C0067EAA0 /* MapViewController.m */; };
+		2B1A270E1C19E83C0067EAA0 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A27021C19E83C0067EAA0 /* new.png */; };
+		2B1A270F1C19E83C0067EAA0 /* redpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A27031C19E83C0067EAA0 /* redpin.png */; };
+		2B1A27101C19E83C0067EAA0 /* SecondEventPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A27051C19E83C0067EAA0 /* SecondEventPopupViewController.m */; };
 		2B320F631C18ED910006E321 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F601C18ED910006E321 /* home.png */; };
 		2B320F641C18ED910006E321 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F611C18ED910006E321 /* bell.png */; };
 		2B320F651C18ED910006E321 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F621C18ED910006E321 /* settings.png */; };
@@ -24,6 +35,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1A26F51C19E83C0067EAA0 /* AddFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFoodViewController.h; sourceTree = "<group>"; };
+		2B1A26F61C19E83C0067EAA0 /* AddFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFoodViewController.m; sourceTree = "<group>"; };
+		2B1A26F71C19E83C0067EAA0 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		2B1A26F81C19E83C0067EAA0 /* FirstEventPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstEventPopupViewController.h; sourceTree = "<group>"; };
+		2B1A26F91C19E83C0067EAA0 /* FirstEventPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstEventPopupViewController.m; sourceTree = "<group>"; };
+		2B1A26FA1C19E83C0067EAA0 /* greenpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenpin.png; sourceTree = "<group>"; };
+		2B1A26FB1C19E83C0067EAA0 /* GuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestViewController.h; sourceTree = "<group>"; };
+		2B1A26FC1C19E83C0067EAA0 /* GuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestViewController.m; sourceTree = "<group>"; };
+		2B1A26FD1C19E83C0067EAA0 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		2B1A26FE1C19E83C0067EAA0 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		2B1A26FF1C19E83C0067EAA0 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		2B1A27001C19E83C0067EAA0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		2B1A27011C19E83C0067EAA0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		2B1A27021C19E83C0067EAA0 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		2B1A27031C19E83C0067EAA0 /* redpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpin.png; sourceTree = "<group>"; };
+		2B1A27041C19E83C0067EAA0 /* SecondEventPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondEventPopupViewController.h; sourceTree = "<group>"; };
+		2B1A27051C19E83C0067EAA0 /* SecondEventPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondEventPopupViewController.m; sourceTree = "<group>"; };
 		2B320F601C18ED910006E321 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		2B320F611C18ED910006E321 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		2B320F621C18ED910006E321 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
@@ -79,6 +107,23 @@
 		2B587B9F1BF99B5800574054 /* FoodShare */ = {
 			isa = PBXGroup;
 			children = (
+				2B1A26F51C19E83C0067EAA0 /* AddFoodViewController.h */,
+				2B1A26F61C19E83C0067EAA0 /* AddFoodViewController.m */,
+				2B1A26F71C19E83C0067EAA0 /* camera.png */,
+				2B1A26F81C19E83C0067EAA0 /* FirstEventPopupViewController.h */,
+				2B1A26F91C19E83C0067EAA0 /* FirstEventPopupViewController.m */,
+				2B1A26FA1C19E83C0067EAA0 /* greenpin.png */,
+				2B1A26FB1C19E83C0067EAA0 /* GuestViewController.h */,
+				2B1A26FC1C19E83C0067EAA0 /* GuestViewController.m */,
+				2B1A26FD1C19E83C0067EAA0 /* ListViewController.h */,
+				2B1A26FE1C19E83C0067EAA0 /* ListViewController.m */,
+				2B1A26FF1C19E83C0067EAA0 /* map.png */,
+				2B1A27001C19E83C0067EAA0 /* MapViewController.h */,
+				2B1A27011C19E83C0067EAA0 /* MapViewController.m */,
+				2B1A27021C19E83C0067EAA0 /* new.png */,
+				2B1A27031C19E83C0067EAA0 /* redpin.png */,
+				2B1A27041C19E83C0067EAA0 /* SecondEventPopupViewController.h */,
+				2B1A27051C19E83C0067EAA0 /* SecondEventPopupViewController.m */,
 				2B76A4BA1C13E76E004EB2FD /* clock-128.png */,
 				2B320F601C18ED910006E321 /* home.png */,
 				2B320F611C18ED910006E321 /* bell.png */,
@@ -170,9 +215,14 @@
 				2B76A4BB1C13E76E004EB2FD /* clock-128.png in Resources */,
 				2B320F651C18ED910006E321 /* settings.png in Resources */,
 				2B320F631C18ED910006E321 /* home.png in Resources */,
+				2B1A270F1C19E83C0067EAA0 /* redpin.png in Resources */,
 				2B320F641C18ED910006E321 /* bell.png in Resources */,
+				2B1A270C1C19E83C0067EAA0 /* map.png in Resources */,
 				2B587BB01BF99B5800574054 /* LaunchScreen.storyboard in Resources */,
+				2B1A270E1C19E83C0067EAA0 /* new.png in Resources */,
 				2B587BAD1BF99B5800574054 /* Assets.xcassets in Resources */,
+				2B1A27091C19E83C0067EAA0 /* greenpin.png in Resources */,
+				2B1A27071C19E83C0067EAA0 /* camera.png in Resources */,
 				2B587BAB1BF99B5800574054 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,12 +234,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1A270B1C19E83C0067EAA0 /* ListViewController.m in Sources */,
 				2B76A4C01C13F114004EB2FD /* EventTableViewController.m in Sources */,
 				2BCB1A831C13988600DEFE6E /* DefaultView.m in Sources */,
 				2B76A4B91C13D881004EB2FD /* EventView.m in Sources */,
 				2B587BA81BF99B5800574054 /* ViewController.m in Sources */,
+				2B1A270A1C19E83C0067EAA0 /* GuestViewController.m in Sources */,
 				2B587BA51BF99B5800574054 /* AppDelegate.m in Sources */,
+				2B1A27061C19E83C0067EAA0 /* AddFoodViewController.m in Sources */,
+				2B1A27101C19E83C0067EAA0 /* SecondEventPopupViewController.m in Sources */,
 				2B587BA21BF99B5800574054 /* main.m in Sources */,
+				2B1A27081C19E83C0067EAA0 /* FirstEventPopupViewController.m in Sources */,
+				2B1A270D1C19E83C0067EAA0 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

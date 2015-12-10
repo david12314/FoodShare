@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B320F631C18ED910006E321 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F601C18ED910006E321 /* home.png */; };
+		2B320F641C18ED910006E321 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F611C18ED910006E321 /* bell.png */; };
+		2B320F651C18ED910006E321 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F621C18ED910006E321 /* settings.png */; };
 		2B587BA21BF99B5800574054 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B587BA11BF99B5800574054 /* main.m */; };
 		2B587BA51BF99B5800574054 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B587BA41BF99B5800574054 /* AppDelegate.m */; };
 		2B587BA81BF99B5800574054 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B587BA71BF99B5800574054 /* ViewController.m */; };
 		2B587BAB1BF99B5800574054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B587BA91BF99B5800574054 /* Main.storyboard */; };
 		2B587BAD1BF99B5800574054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B587BAC1BF99B5800574054 /* Assets.xcassets */; };
 		2B587BB01BF99B5800574054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B587BAE1BF99B5800574054 /* LaunchScreen.storyboard */; };
+		2B76A4B91C13D881004EB2FD /* EventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B76A4B81C13D881004EB2FD /* EventView.m */; };
+		2B76A4BB1C13E76E004EB2FD /* clock-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76A4BA1C13E76E004EB2FD /* clock-128.png */; };
+		2B76A4BD1C13EA19004EB2FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B76A4BC1C13EA19004EB2FD /* QuartzCore.framework */; };
+		2B76A4C01C13F114004EB2FD /* EventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B76A4BF1C13F114004EB2FD /* EventTableViewController.m */; };
 		2BCB1A831C13988600DEFE6E /* DefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB1A821C13988600DEFE6E /* DefaultView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B320F601C18ED910006E321 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		2B320F611C18ED910006E321 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		2B320F621C18ED910006E321 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		2B587B9D1BF99B5800574054 /* FoodShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B587BA11BF99B5800574054 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B587BA31BF99B5800574054 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,6 +37,12 @@
 		2B587BAC1BF99B5800574054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B587BAF1BF99B5800574054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B587BB11BF99B5800574054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B76A4B71C13D881004EB2FD /* EventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventView.h; sourceTree = "<group>"; };
+		2B76A4B81C13D881004EB2FD /* EventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventView.m; sourceTree = "<group>"; };
+		2B76A4BA1C13E76E004EB2FD /* clock-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-128.png"; sourceTree = "<group>"; };
+		2B76A4BC1C13EA19004EB2FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2B76A4BE1C13F114004EB2FD /* EventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewController.h; sourceTree = "<group>"; };
+		2B76A4BF1C13F114004EB2FD /* EventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewController.m; sourceTree = "<group>"; };
 		2BCB1A811C13988600DEFE6E /* DefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultView.h; sourceTree = "<group>"; };
 		2BCB1A821C13988600DEFE6E /* DefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B76A4BD1C13EA19004EB2FD /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +62,7 @@
 		2B587B941BF99B5700574054 = {
 			isa = PBXGroup;
 			children = (
+				2B76A4BC1C13EA19004EB2FD /* QuartzCore.framework */,
 				2B587B9F1BF99B5800574054 /* FoodShare */,
 				2B587B9E1BF99B5800574054 /* Products */,
 			);
@@ -61,6 +79,10 @@
 		2B587B9F1BF99B5800574054 /* FoodShare */ = {
 			isa = PBXGroup;
 			children = (
+				2B76A4BA1C13E76E004EB2FD /* clock-128.png */,
+				2B320F601C18ED910006E321 /* home.png */,
+				2B320F611C18ED910006E321 /* bell.png */,
+				2B320F621C18ED910006E321 /* settings.png */,
 				2B587BA31BF99B5800574054 /* AppDelegate.h */,
 				2B587BA41BF99B5800574054 /* AppDelegate.m */,
 				2B587BA61BF99B5800574054 /* ViewController.h */,
@@ -72,6 +94,10 @@
 				2B587BA01BF99B5800574054 /* Supporting Files */,
 				2BCB1A811C13988600DEFE6E /* DefaultView.h */,
 				2BCB1A821C13988600DEFE6E /* DefaultView.m */,
+				2B76A4B71C13D881004EB2FD /* EventView.h */,
+				2B76A4B81C13D881004EB2FD /* EventView.m */,
+				2B76A4BE1C13F114004EB2FD /* EventTableViewController.h */,
+				2B76A4BF1C13F114004EB2FD /* EventTableViewController.m */,
 			);
 			path = FoodShare;
 			sourceTree = "<group>";
@@ -141,6 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B76A4BB1C13E76E004EB2FD /* clock-128.png in Resources */,
+				2B320F651C18ED910006E321 /* settings.png in Resources */,
+				2B320F631C18ED910006E321 /* home.png in Resources */,
+				2B320F641C18ED910006E321 /* bell.png in Resources */,
 				2B587BB01BF99B5800574054 /* LaunchScreen.storyboard in Resources */,
 				2B587BAD1BF99B5800574054 /* Assets.xcassets in Resources */,
 				2B587BAB1BF99B5800574054 /* Main.storyboard in Resources */,
@@ -154,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B76A4C01C13F114004EB2FD /* EventTableViewController.m in Sources */,
 				2BCB1A831C13988600DEFE6E /* DefaultView.m in Sources */,
+				2B76A4B91C13D881004EB2FD /* EventView.m in Sources */,
 				2B587BA81BF99B5800574054 /* ViewController.m in Sources */,
 				2B587BA51BF99B5800574054 /* AppDelegate.m in Sources */,
 				2B587BA21BF99B5800574054 /* main.m in Sources */,

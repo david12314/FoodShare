@@ -32,12 +32,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
-        ViewController *guestViewEvent = [[ViewController alloc] init];
+        ViewController *guestViewEvent = [[ViewController alloc] initAsGuestViewWithFood:@[@"Pizza", @"Pasta"] Friends:@[@"Ann", @"Bob"] hasRSVP:NO];
         [self.navigationController pushViewController:guestViewEvent animated:YES];
         
     }
     if(indexPath.row == 1){
-        //push second event info
+        ViewController *guestViewEvent = [[ViewController alloc] initAsGuestViewWithFood:@[@"Fried Rice"] Friends:@[@"Carl", @"Dan"] hasRSVP:NO];
+        [self.navigationController pushViewController:guestViewEvent animated:YES];
     }
 }
 

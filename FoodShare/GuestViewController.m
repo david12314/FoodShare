@@ -7,6 +7,7 @@
 //
 
 #import "GuestViewController.h"
+#import "SettingViewController.h"
 
 @interface GuestViewController ()
 - (IBAction)SegmentedControlClick:(id)sender;
@@ -18,6 +19,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    UIImage *homeImage = [UIImage imageNamed:@"home.png"];
+    UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    homeButton.bounds = CGRectMake(0, 0, 22, 22);
+    [homeButton setImage:homeImage forState:UIControlStateNormal];
+    [homeButton addTarget:self action:@selector(goHome) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIView *notificationsContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    UIImage *notificationsImage = [UIImage imageNamed:@"bell.png"];
+    UIButton *notificationsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    notificationsButton.bounds = CGRectMake(0, 0, 22, 22);
+    [notificationsButton setImage:notificationsImage forState:UIControlStateNormal];
+    [notificationsContainer addSubview:notificationsButton];
+    
+    UIImage *settingsImage = [UIImage imageNamed:@"settings.png"];
+    UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    settingsButton.bounds = CGRectMake(0, 0, 22, 22);
+    [settingsButton setImage:settingsImage forState:UIControlStateNormal];
+    [settingsButton addTarget:self action:@selector(gotoSettings) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *home = [[UIBarButtonItem alloc] initWithCustomView:homeButton];
+    UIBarButtonItem *settings = [[UIBarButtonItem alloc] initWithCustomView:settingsButton];
+    //self.navigationItem.leftBarButtonItem = home;
+    self.navigationItem.rightBarButtonItems = @[settings, home];
+    self.navigationItem.titleView = notificationsContainer;
+    
+    [self.navigationController setToolbarHidden:YES animated:animated];
+}
+
+- (void)goHome{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (void)gotoSettings{
+    SettingViewController *_settingsViewController = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+    [self.navigationController pushViewController:_settingsViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

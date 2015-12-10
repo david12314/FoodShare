@@ -38,11 +38,11 @@
 */
 
 - (IBAction)DetailsClick:(id)sender {
-    ViewController *guestViewEvent = [[ViewController alloc] init];
+    ViewController *guestViewEvent = [[ViewController alloc] initAsGuestViewWithFood:@[@"Pizza", @"Pasta"] Friends:@[@"Carl", @"Dan"] hasRSVP:YES];
     [self.navigationController pushViewController:guestViewEvent animated:YES];
 }
 
 - (IBAction)CancelRSVPClick:(id)sender {
-    //push to cancel rsvp
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

@@ -157,6 +157,7 @@
         [_finishButton setTitle:@"Create" forState:UIControlStateNormal];
         [_finishButton setTintColor:[UIColor whiteColor]];
         _finishButton.backgroundColor = [UIColor colorWithRed:102.0f/255 green:102.0f/255 blue:1.0 alpha:1.0];
+        [_finishButton addTarget:VC action:@selector(finishedEvent) forControlEvents:UIControlEventTouchUpInside];
         _finishButton.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:_finishButton];
         
@@ -167,7 +168,7 @@
     return self;
 }
 
-- (id)initAsGuestView:(UITableViewController *)tableViewController Friends:(UITableViewController *)friendsTableViewController VC:(UIViewController *)VC{
+- (id)initAsGuestView:(UITableViewController *)tableViewController Friends:(UITableViewController *)friendsTableViewController VC:(UIViewController *)VC hasRSVP:(BOOL)hasRSVP{
     self = [super init];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
@@ -265,9 +266,18 @@
         
         
         _finishButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [_finishButton setTitle:@"RSVP" forState:UIControlStateNormal];
         [_finishButton setTintColor:[UIColor whiteColor]];
-        _finishButton.backgroundColor = [UIColor colorWithRed:45.0f/255 green:179.0f/255 blue:0 alpha:1.0];
+        
+        if (hasRSVP) {
+            [_finishButton setTitle:@"Remove RSVP" forState:UIControlStateNormal];
+            _finishButton.backgroundColor = [UIColor redColor];
+        }
+        else{
+            [_finishButton setTitle:@"RSVP" forState:UIControlStateNormal];
+            
+            _finishButton.backgroundColor = [UIColor colorWithRed:45.0f/255 green:179.0f/255 blue:0 alpha:1.0];
+        }
+        [_finishButton addTarget:VC action:@selector(finishedEvent) forControlEvents:UIControlEventTouchUpInside];
         _finishButton.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:_finishButton];
         
@@ -284,6 +294,7 @@
     
     _finishButton.backgroundColor = [UIColor colorWithRed:45.0f/255 green:179.0f/255 blue:0 alpha:1.0];
     [_finishButton setTitle:@"Edit" forState:UIControlStateNormal];
+    [_finishButton addTarget:VC action:@selector(finishedEvent) forControlEvents:UIControlEventTouchUpInside];
     
     return self;
 }

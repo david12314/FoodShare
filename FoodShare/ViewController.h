@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+- (id)initAsHostAddWithFood: (NSArray *)food Friends: (NSArray *)friends;
+- (id)initAsHostEditWithFood: (NSArray *)food Friends: (NSArray *)friends;
+- (id)initAsGuestViewWithFood: (NSArray *)food Friends: (NSArray *)friends hasRSVP: (BOOL)hasRSVP;
 
 @end
 

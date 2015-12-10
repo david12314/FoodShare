@@ -13,7 +13,7 @@
 
 - (id)initAsHostEdit: (UITableViewController *)tableViewController Friends: (UITableViewController *) friendsTableViewController VC: (UIViewController *)VC;
 
-- (id)initAsGuestView: (UITableViewController *)tableViewController Friends: (UITableViewController *)friendsTableViewController VC: (UIViewController *)VC;
+- (id)initAsGuestView: (UITableViewController *)tableViewController Friends: (UITableViewController *)friendsTableViewController VC: (UIViewController *)VC hasRSVP: (BOOL)hasRSVP;
 
 @property UITableViewController *foodTableViewController;
 @property UITableViewController *friendsTableViewController;

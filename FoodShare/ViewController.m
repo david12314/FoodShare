@@ -11,23 +11,71 @@
 #import "EventTableViewController.h"
 #import "EventView.h"
 #import "AddFoodViewController.h"
+#import "SettingViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController{
-    EventView *_eventHostAddView;
+    EventView *_eventView;
+}
+
+- (id)initAsHostAddWithFood:(NSArray *)food Friends:(NSArray *)friends{
+    self = [super init];
+    if (self) {
+        UITableViewController *eventTableViewController = [[EventTableViewController alloc] initWithData:[NSMutableArray arrayWithArray:food]];
+        UITableViewController *friendsTableViewController = [[EventTableViewController alloc] initWithData:[NSMutableArray arrayWithArray:friends]];
+        _eventView = [[EventView alloc] initAsHostAdd: eventTableViewController Friends:friendsTableViewController VC:self];
+        [self addChildViewController:eventTableViewController];
+        [self addChildViewController:friendsTableViewController];
+    }
+    return self;
+}
+
+- (id)initAsHostEditWithFood:(NSArray *)food Friends:(NSArray *)friends{
+    self = [super init];
+    if (self) {
+        UITableViewController *eventTableViewController = [[EventTableViewController alloc] initWithData:[NSMutableArray arrayWithArray:food]];
+        UITableViewController *friendsTableViewController = [[EventTableViewController alloc] initWithData:[NSMutableArray arrayWithArray:friends]];
+        _eventView = [[EventView alloc] initAsHostEdit: eventTableViewController Friends:friendsTableViewController VC:self];
+        [self addChildViewController:eventTableViewController];
+        [self addChildViewController:friendsTableViewController];
+    }
+    return self;
+}
+
+- (id)initAsGuestViewWithFood:(NSArray *)food Friends:(NSArray *)friends hasRSVP:(BOOL)hasRSVP{
+    self = [super init];
+    if (self) {
+        UITableViewController *eventTableViewController = [[EventTableViewController alloc] initWithData:[NSMutableArray arrayWithArray:food]];
+        UITableViewController *friendsTableViewController = [[EventTableViewController alloc] initWithData:[NSMutableArray arrayWithArray:friends]];
+        _eventView = [[EventView alloc] initAsGuestView: eventTableViewController Friends:friendsTableViewController VC:self hasRSVP:hasRSVP];
+        [self addChildViewController:eventTableViewController];
+        [self addChildViewController:friendsTableViewController];
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.navigationController setToolbarHidden:YES animated:YES];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)gotoSettings{
+    SettingViewController *_settingsViewController = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+    [self.navigationController pushViewController:_settingsViewController animated:YES];
+}
+
+- (void)finishedEvent{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)foodPressed{
@@ -44,11 +92,16 @@
     [self.navigationController pushViewController:friendsTableViewController animated:YES];
 }
 
+- (void)goHome{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void)loadView{
     UIImage *homeImage = [UIImage imageNamed:@"home.png"];
     UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     homeButton.bounds = CGRectMake(0, 0, 22, 22);
     [homeButton setImage:homeImage forState:UIControlStateNormal];
+    [homeButton addTarget:self action:@selector(goHome) forControlEvents:UIControlEventTouchUpInside];
     
     UIView *notificationsContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     UIImage *notificationsImage = [UIImage imageNamed:@"bell.png"];
@@ -61,6 +114,7 @@
     UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
     settingsButton.bounds = CGRectMake(0, 0, 22, 22);
     [settingsButton setImage:settingsImage forState:UIControlStateNormal];
+    [settingsButton addTarget:self action:@selector(gotoSettings) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *home = [[UIBarButtonItem alloc] initWithCustomView:homeButton];
     UIBarButtonItem *settings = [[UIBarButtonItem alloc] initWithCustomView:settingsButton];
@@ -68,14 +122,7 @@
     self.navigationItem.rightBarButtonItems = @[settings, home];
     self.navigationItem.titleView = notificationsContainer;
     
-    NSMutableArray *tableData = [[NSMutableArray alloc] initWithArray:@[@"Pizza",@"Rice"]];
-    NSMutableArray *friendsData = [[NSMutableArray alloc] initWithArray:@[@"Ann",@"Bob"]];
-    UITableViewController *eventTableViewController = [[EventTableViewController alloc] initWithData:tableData];
-    UITableViewController *friendsTableViewController = [[EventTableViewController alloc] initWithData:friendsData];
-    _eventHostAddView = [[EventView alloc] initAsHostAdd: eventTableViewController Friends:friendsTableViewController VC:self];
-    [self addChildViewController:eventTableViewController];
-    [self addChildViewController:friendsTableViewController];
-    self.view = _eventHostAddView;
+    self.view = _eventView;
 }
 
 @end

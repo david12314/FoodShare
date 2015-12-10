@@ -18,6 +18,12 @@
 		2B1A270E1C19E83C0067EAA0 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A27021C19E83C0067EAA0 /* new.png */; };
 		2B1A270F1C19E83C0067EAA0 /* redpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A27031C19E83C0067EAA0 /* redpin.png */; };
 		2B1A27101C19E83C0067EAA0 /* SecondEventPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A27051C19E83C0067EAA0 /* SecondEventPopupViewController.m */; };
+		2B1A27191C1A01DF0067EAA0 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A27121C1A01DF0067EAA0 /* HomeTableViewCell.m */; };
+		2B1A271A1C1A01DF0067EAA0 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A27131C1A01DF0067EAA0 /* HomeTableViewCell.xib */; };
+		2B1A271B1C1A01DF0067EAA0 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A27151C1A01DF0067EAA0 /* HomeTableViewController.m */; };
+		2B1A271C1C1A01DF0067EAA0 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A27171C1A01DF0067EAA0 /* SettingViewController.m */; };
+		2B1A271D1C1A01DF0067EAA0 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A27181C1A01DF0067EAA0 /* SettingViewController.xib */; };
+		2B1A271F1C1A048C0067EAA0 /* WenXuan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A271E1C1A048C0067EAA0 /* WenXuan.storyboard */; };
 		2B320F631C18ED910006E321 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F601C18ED910006E321 /* home.png */; };
 		2B320F641C18ED910006E321 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F611C18ED910006E321 /* bell.png */; };
 		2B320F651C18ED910006E321 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B320F621C18ED910006E321 /* settings.png */; };
@@ -52,6 +58,15 @@
 		2B1A27031C19E83C0067EAA0 /* redpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpin.png; sourceTree = "<group>"; };
 		2B1A27041C19E83C0067EAA0 /* SecondEventPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondEventPopupViewController.h; sourceTree = "<group>"; };
 		2B1A27051C19E83C0067EAA0 /* SecondEventPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondEventPopupViewController.m; sourceTree = "<group>"; };
+		2B1A27111C1A01DF0067EAA0 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		2B1A27121C1A01DF0067EAA0 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		2B1A27131C1A01DF0067EAA0 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		2B1A27141C1A01DF0067EAA0 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		2B1A27151C1A01DF0067EAA0 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		2B1A27161C1A01DF0067EAA0 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		2B1A27171C1A01DF0067EAA0 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		2B1A27181C1A01DF0067EAA0 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		2B1A271E1C1A048C0067EAA0 /* WenXuan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WenXuan.storyboard; sourceTree = "<group>"; };
 		2B320F601C18ED910006E321 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		2B320F611C18ED910006E321 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		2B320F621C18ED910006E321 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
@@ -107,6 +122,14 @@
 		2B587B9F1BF99B5800574054 /* FoodShare */ = {
 			isa = PBXGroup;
 			children = (
+				2B1A27111C1A01DF0067EAA0 /* HomeTableViewCell.h */,
+				2B1A27121C1A01DF0067EAA0 /* HomeTableViewCell.m */,
+				2B1A27131C1A01DF0067EAA0 /* HomeTableViewCell.xib */,
+				2B1A27141C1A01DF0067EAA0 /* HomeTableViewController.h */,
+				2B1A27151C1A01DF0067EAA0 /* HomeTableViewController.m */,
+				2B1A27161C1A01DF0067EAA0 /* SettingViewController.h */,
+				2B1A27171C1A01DF0067EAA0 /* SettingViewController.m */,
+				2B1A27181C1A01DF0067EAA0 /* SettingViewController.xib */,
 				2B1A26F51C19E83C0067EAA0 /* AddFoodViewController.h */,
 				2B1A26F61C19E83C0067EAA0 /* AddFoodViewController.m */,
 				2B1A26F71C19E83C0067EAA0 /* camera.png */,
@@ -132,6 +155,7 @@
 				2B587BA41BF99B5800574054 /* AppDelegate.m */,
 				2B587BA61BF99B5800574054 /* ViewController.h */,
 				2B587BA71BF99B5800574054 /* ViewController.m */,
+				2B1A271E1C1A048C0067EAA0 /* WenXuan.storyboard */,
 				2B587BA91BF99B5800574054 /* Main.storyboard */,
 				2B587BAC1BF99B5800574054 /* Assets.xcassets */,
 				2B587BAE1BF99B5800574054 /* LaunchScreen.storyboard */,
@@ -219,7 +243,10 @@
 				2B320F641C18ED910006E321 /* bell.png in Resources */,
 				2B1A270C1C19E83C0067EAA0 /* map.png in Resources */,
 				2B587BB01BF99B5800574054 /* LaunchScreen.storyboard in Resources */,
+				2B1A271D1C1A01DF0067EAA0 /* SettingViewController.xib in Resources */,
 				2B1A270E1C19E83C0067EAA0 /* new.png in Resources */,
+				2B1A271F1C1A048C0067EAA0 /* WenXuan.storyboard in Resources */,
+				2B1A271A1C1A01DF0067EAA0 /* HomeTableViewCell.xib in Resources */,
 				2B587BAD1BF99B5800574054 /* Assets.xcassets in Resources */,
 				2B1A27091C19E83C0067EAA0 /* greenpin.png in Resources */,
 				2B1A27071C19E83C0067EAA0 /* camera.png in Resources */,
@@ -243,9 +270,12 @@
 				2B587BA51BF99B5800574054 /* AppDelegate.m in Sources */,
 				2B1A27061C19E83C0067EAA0 /* AddFoodViewController.m in Sources */,
 				2B1A27101C19E83C0067EAA0 /* SecondEventPopupViewController.m in Sources */,
+				2B1A27191C1A01DF0067EAA0 /* HomeTableViewCell.m in Sources */,
+				2B1A271B1C1A01DF0067EAA0 /* HomeTableViewController.m in Sources */,
 				2B587BA21BF99B5800574054 /* main.m in Sources */,
 				2B1A27081C19E83C0067EAA0 /* FirstEventPopupViewController.m in Sources */,
 				2B1A270D1C19E83C0067EAA0 /* MapViewController.m in Sources */,
+				2B1A271C1C1A01DF0067EAA0 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

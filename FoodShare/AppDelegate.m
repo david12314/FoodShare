@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import "GuestViewController.h"
+#import "HomeTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,38 +21,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"WenXuan" bundle:nil];
+    HomeTableViewController *_homeViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"homeTableViewController"];
     
+    UINavigationController *_navController = [[UINavigationController alloc] initWithRootViewController:_homeViewController];
     
-    
-    UIViewController *_defaultViewController = [ViewController new];
-    
-    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    GuestViewController *_guestViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"guestViewController"];
-    
-    UINavigationController *_navController = [[UINavigationController alloc] initWithRootViewController:_guestViewController];
-    
-        UIImage *homeImage = [UIImage imageNamed:@"home.png"];
-        UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        homeButton.bounds = CGRectMake(0, 0, 22, 22);
-        [homeButton setImage:homeImage forState:UIControlStateNormal];
-    
-        UIView *notificationsContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-        UIImage *notificationsImage = [UIImage imageNamed:@"bell.png"];
-        UIButton *notificationsButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        notificationsButton.bounds = CGRectMake(0, 0, 22, 22);
-        [notificationsButton setImage:notificationsImage forState:UIControlStateNormal];
-        [notificationsContainer addSubview:notificationsButton];
-    
-        UIImage *settingsImage = [UIImage imageNamed:@"settings.png"];
-        UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        settingsButton.bounds = CGRectMake(0, 0, 22, 22);
-        [settingsButton setImage:settingsImage forState:UIControlStateNormal];
-    
-        UIBarButtonItem *home = [[UIBarButtonItem alloc] initWithCustomView:homeButton];
-        UIBarButtonItem *settings = [[UIBarButtonItem alloc] initWithCustomView:settingsButton];
-        _navController.navigationItem.leftBarButtonItem = home;
-        _navController.navigationItem.rightBarButtonItem = settings;
-        _navController.navigationItem.titleView = notificationsContainer;
+        
     
     _window.rootViewController = _navController;
     [_window makeKeyAndVisible];
